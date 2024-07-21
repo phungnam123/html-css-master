@@ -9,3 +9,8 @@ _alt_ là viết tắt alternate text nó dùng trong việc SEO khi ảnh bị 
 _span_ là thẻ inline dùng trong đoạn chữ ngắn
 
 # CSS selector: tag,class,id,attribue
+
+#
+
+Min-width: độ rộng tối thiểu
+Max-width: độ rộng tối đa
