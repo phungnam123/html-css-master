@@ -2,12 +2,13 @@
 mixin popularItem()
   .popular-item
     .popular-image
+        .popular-overlay
         img(src="https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt="unsplash").popular-img
         span.popular-label Must See 
     .popular-content
         span.popular-time Sep 28 10:00AM - 1:00PM
         h3.popular-title The Grand Palace
         .popular-review
-            img(src="images/star.png", alt="star")
+            img(src="images/star.png", alt="star").popular-star
             span 4.8 (12reviews)
     
