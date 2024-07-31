@@ -9,10 +9,22 @@ html(lang="en")
         link(rel='preconnect', href='https://fonts.googleapis.com')
         link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
         link(href='https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap', rel='stylesheet')
+        link(href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,500;1,9..40,500&display=swap" rel="stylesheet")
         link(rel='stylesheet', href='./style.css')
 
-    body 
-        .tour-list
-          +tourItem('https://images.unsplash.com/photo-1707344088547-3cf7cea5ca49?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D','From $40','ThaiLands Ayuthaya Temples Cruise from Bangkok',4.3,12,'6 hours','$20')
-          +tourItem('https://plus.unsplash.com/premium_photo-1677343210638-5d3ce6ddbf85?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D','From $80',' Explore Rome ancient ruins with a captivating River',4.6,16,'7 hours','$30')
-          +tourItem('https://plus.unsplash.com/premium_photo-1675484743423-57da4e8011c2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D','From $10','Discover Istanbul majestica scenic shores of the city',5.0,5,'9 hours','$40')
+    body
+    section.top-tours
+        .container
+            h2.heading Top BangKok Tours 
+            .tour-list
+                +tourItem('https://images.unsplash.com/photo-1707344088547-3cf7cea5ca49?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D','From $40','ThaiLands Ayuthaya Temples Cruise from Bangkok',4.3,12,'6 hours','$20')
+                +tourItem('https://plus.unsplash.com/premium_photo-1677343210638-5d3ce6ddbf85?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D','From $80',' Explore Rome ancient ruins with a captivating River',4.6,16,'7 hours','$30')
+                +tourItem('https://plus.unsplash.com/premium_photo-1675484743423-57da4e8011c2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D','From $10','Discover Istanbul majestica scenic shores of the city',5.0,5,'9 hours','$40')
+    section.popular
+        .container 
+            h2.heading Popular things To Do in BangKok
+            .popular-list 
+                +popular()
+                +popular()
+                +popular()
+                +popular()
