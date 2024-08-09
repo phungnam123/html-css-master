@@ -130,12 +130,18 @@ body {
 }
 
 /* popular */
+.popular-list {
+  --columns: 4;
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  gap: 30px;
+}
+
 .popular-item {
   border-radius: 14px;
   overflow: hidden;
   background-color: #fff;
   box-shadow: 0 12px 64px rgba(0, 0, 0, 0.06);
-  width: 200px;
 }
 
 .popular-image {
@@ -201,6 +207,9 @@ body {
 }
 
 @media screen and (max-width: 767.8px) {
+  .heading {
+    font-size: 18px;
+  }
   .tour-list {
     flex-wrap: wrap;
     row-gap: 30px;
@@ -228,6 +237,10 @@ body {
   .tour-image {
     height: 211px;
   }
+
+  .popular-list {
+    --columns: 1;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023.98px) {
@@ -254,5 +267,9 @@ body {
   }
   .tour-content {
     padding: 17px 17px 9px;
+  }
+
+  .popular-list {
+    --columns: 2;
   }
 }
